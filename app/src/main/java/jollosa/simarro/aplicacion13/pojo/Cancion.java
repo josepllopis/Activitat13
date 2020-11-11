@@ -1,22 +1,22 @@
 package jollosa.simarro.aplicacion13.pojo;
 
 public class Cancion {
-    private String compositores;
+    private String compositor;
     private String duracion;
     private String nombre;
 
     public Cancion(String compositores,String duracion,String nombre) {
-        this.compositores = compositores;
+        this.compositor = compositores;
         this.duracion = duracion;
         this.nombre = nombre;
     }
 
     public String getCompositores() {
-        return compositores;
+        return compositor;
     }
 
     public void setCompositores(String compositores) {
-        this.compositores = compositores;
+        this.compositor = compositores;
     }
 
     public String getDuracion() {
@@ -38,7 +38,7 @@ public class Cancion {
     @Override
     public String toString() {
         return "Cancion{" +
-                "compositores='" + compositores + '\'' +
+                "compositores='" + compositor + '\'' +
                 ", duracion='" + duracion + '\'' +
                 ", genero='" + nombre + '\'' +
                 '}';

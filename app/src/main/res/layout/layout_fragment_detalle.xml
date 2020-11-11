@@ -7,7 +7,7 @@
     android:background="#FFBBBBBB">
 
     <ListView
-        android:id="@+id/NombreCanciones"
+        android:id="@+id/CaracteristicasCanciones"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </ListView>

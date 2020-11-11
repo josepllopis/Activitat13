@@ -10,13 +10,15 @@
         android:id="@+id/FrgListado"
         android:layout_weight="40"
         android:layout_width="match_parent"
-        android:layout_height="0px"/>
+        android:layout_height="0px">
+    </fragment>
 
     <fragment
         class="jollosa.simarro.aplicacion13.fragment.Activity_Fragment_Detalle"
         android:id="@+id/FrgDetalle"
         android:layout_weight="60"
         android:layout_width="match_parent"
-        android:layout_height="0px"
+        android:layout_height="0px">
+    </fragment>
 
 </LinearLayout>

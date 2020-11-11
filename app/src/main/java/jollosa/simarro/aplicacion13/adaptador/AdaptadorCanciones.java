@@ -32,11 +32,8 @@ public class AdaptadorCanciones extends ArrayAdapter<Cancion> {
         View item = inflater.inflate(R.layout.layout_elemento_detalle,null);
 
         TextView lblNombre = (TextView)item.findViewById(R.id.LblNombre);
-        lblNombre.setText(discos.get(position).getCanciones().get(position).getNombre());
-        TextView lblDuracion = (TextView)item.findViewById(R.id.LblDuracion);
-        lblDuracion.setText(discos.get(position).getCanciones().get(position).getDuracion());
-        TextView lblCompositores = (TextView)item.findViewById(R.id.LblCompositores);
-        lblCompositores.setText(discos.get(position).getCanciones().get(position).getCompositores());
+        lblNombre.setText(canciones.get(position).getNombre());
+
 
         return(item);
     }

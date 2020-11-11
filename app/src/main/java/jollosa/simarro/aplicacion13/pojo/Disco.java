@@ -1,8 +1,12 @@
 package jollosa.simarro.aplicacion13.pojo;
 
+import android.os.Parcelable;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Disco {
+
+public class Disco implements Serializable {
     private String nombre;
     private ArrayList<Cancion> canciones;
 
@@ -27,11 +31,5 @@ public class Disco {
         this.nombre = nombre;
     }
 
-    @Override
-    public String toString() {
-        return "Disco{" +
-                "nombre='" + nombre + '\'' +
-                ", canciones=" + canciones +
-                '}';
-    }
+
 }

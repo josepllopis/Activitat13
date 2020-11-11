@@ -25,6 +25,7 @@ public class AdaptadorDiscos extends ArrayAdapter<Disco> {
         this.discos = discos;
     }
 
+    @Override
     public View getView(int position, View convertView, ViewGroup parent){
         LayoutInflater inflater = context.getLayoutInflater();
         View item = inflater.inflate(R.layout.layout_elemento_lista,null);

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Aplicacion13</string>
+    <string name="DetalleActivity">DetalleActivity</string>
 </resources>
