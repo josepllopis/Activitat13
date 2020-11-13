@@ -15,6 +15,11 @@ public class Disco implements Serializable {
         this.canciones = canciones;
     }
 
+    public Disco(String nombre){
+        this.nombre = nombre;
+        this.canciones = new ArrayList<Cancion>();
+    }
+
     public ArrayList<Cancion> getCanciones() {
         return canciones;
     }

@@ -30,7 +30,7 @@ public class Activity_Principal extends AppCompatActivity implements DiscosListe
         boolean hayDestalle = (getSupportFragmentManager().findFragmentById(R.id.FrgDetalle)!=null);
 
         if(hayDestalle){
-            ((Activity_Fragment_Detalle)getSupportFragmentManager().findFragmentById(R.id.FrgDetalle)).mostrarDisco(disco);
+            ((Activity_Fragment_Detalle)getSupportFragmentManager().findFragmentById(R.id.FrgDetalle)).mostrarCanciones(disco);
         }else{
 
             Intent i = new Intent(this,Activity_Detalle.class);

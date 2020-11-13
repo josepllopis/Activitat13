@@ -34,6 +34,12 @@ public class AdaptadorCanciones extends ArrayAdapter<Cancion> {
         TextView lblNombre = (TextView)item.findViewById(R.id.LblNombre);
         lblNombre.setText(canciones.get(position).getNombre());
 
+        TextView lblDuracion = (TextView)item.findViewById(R.id.LblDuracion);
+        lblDuracion.setText(canciones.get(position).getDuracion());
+
+        TextView lblCompositor = (TextView)item.findViewById(R.id.LblCompositor);
+        lblCompositor.setText(canciones.get(position).getCompositores());
+
 
         return(item);
     }

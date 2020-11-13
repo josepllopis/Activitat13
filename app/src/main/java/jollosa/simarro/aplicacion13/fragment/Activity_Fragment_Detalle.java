@@ -8,8 +8,11 @@ import android.widget.ListView;
 
 import androidx.fragment.app.Fragment;
 
+import java.util.ArrayList;
+
 import jollosa.simarro.aplicacion13.R;
 import jollosa.simarro.aplicacion13.adaptador.AdaptadorCanciones;
+import jollosa.simarro.aplicacion13.pojo.Cancion;
 import jollosa.simarro.aplicacion13.pojo.Disco;
 
 public class Activity_Fragment_Detalle extends Fragment {
@@ -19,9 +22,17 @@ public class Activity_Fragment_Detalle extends Fragment {
         return inflater.inflate(R.layout.layout_fragment_detalle,container,false);
     }
 
-    public void mostrarDisco(Disco disco){
+    public void mostrarCanciones(Disco disco){
         ListView lsv = (ListView)getView().findViewById(R.id.CaracteristicasCanciones);
+        ArrayList<Cancion>datos = new ArrayList<>();
 
-        lsv.setAdapter(new AdaptadorCanciones(this,disco.getCanciones()));
+        for(Cancion c : disco.getCanciones()){
+            datos.add(c);
+        }
+
+
+        lsv.setAdapter(new AdaptadorCanciones(this,datos));
+
+
     }
 }

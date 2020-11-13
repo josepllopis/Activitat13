@@ -19,9 +19,9 @@ public class Activity_Detalle extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
 
-        Disco disco = (Disco) getIntent().getSerializableExtra("disco");
+        Disco disco = (Disco) bundle.getSerializable("disco");
 
-        detalle.mostrarDisco(disco);
+        detalle.mostrarCanciones(disco);
 
 
 

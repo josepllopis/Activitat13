@@ -13,6 +13,25 @@
         android:textSize="20sp">
     </TextView>
 
+    <TextView
+        android:id="@+id/LblDuracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/LblCompositor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp">
+    </TextView>
+
+
+
 
 
 </LinearLayout>
